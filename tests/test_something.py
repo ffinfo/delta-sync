@@ -1,3 +1,5 @@
+from delta_sync.sync import sync_table
+
+
 def test_something():
-    import delta_sync
-    print(delta_sync)
+    print(sync_table)
