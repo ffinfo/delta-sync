@@ -10,11 +10,11 @@ This package will contain methods to sync delta table. It will use
 ```python
 from delta import DeltaTable
 
-from delta_sync.sync import sync_table
+from delta_sync import sync_table
 
 source_table = DeltaTable.forName("<source table name>")
-output_table = DeltaTable.forPath("<output table name>")
-status_table = DeltaTable.forPath("<status table name>")
+output_table = DeltaTable.forName("<output table name>")
+status_table = DeltaTable.forName("<status table name>")
 
 sync_table(source_table, output_table, status_table)
 ```
