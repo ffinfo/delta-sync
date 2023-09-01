@@ -36,6 +36,11 @@ jobs:
         git config --local user.name "Bumpversion"
         echo "new version: ${NEW_VERSION}"
         poetry update
+        
+        poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+        poetry build
+        poetry publish
+        
         git add pyproject.toml poetry.lock
         git commit -m "Bump version to ${NEW_VERSION}"
         git tag "v${NEW_VERSION}"
