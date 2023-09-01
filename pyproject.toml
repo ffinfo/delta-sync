@@ -4,7 +4,7 @@ version = "0.0.1"
 description = "Syncing delta tables"
 authors = ["Peter van 't Hof' <pjrvanthof@gmail.com>"]
 
-keywords = ["pydantic", "spark"]
+keywords = ["spark", "delta", "sync"]
 readme = "README.md"
 license = "MIT"
 homepage = "https://github.com/ffinfo/delta-sync"
