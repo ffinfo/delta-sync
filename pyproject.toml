@@ -28,7 +28,7 @@ delta-spark = "^2.4.0"
 spark = ["pyspark"]
 
 [tool.poetry.dev-dependencies]
-coverage= {version=  "^7.3.0", extras=["toml"]}
+coverage= {version=  "^7.3.1", extras=["toml"]}
 pytest= "7.0.1"
 pytest-mock="3.11.1"
 pyproject-flake8 = "^6.0.0.post1"
